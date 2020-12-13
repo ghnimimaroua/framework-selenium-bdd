@@ -9,6 +9,7 @@ public class AuthentificationPage {
 	final static String USER_NAME_ID= "txtUsername";
 	final static String PASSWORD_ID= "txtPassword";
 	final static String BUTTON_LOGIN= "btnLogin";
+	final static String MESSAGE_ID= "welcome";
 
 	/*@FindBy*/
 	@FindBy(how=How.ID, using= USER_NAME_ID)
@@ -17,6 +18,8 @@ public class AuthentificationPage {
 	public static WebElement passWord;
 	@FindBy(how=How.ID, using= BUTTON_LOGIN)
 	public static WebElement btnLogin;
+	@FindBy(how=How.ID, using= MESSAGE_ID)
+	public static WebElement msg_welcome;
 
 	/*Method*/
 	public void fillUserName() {
